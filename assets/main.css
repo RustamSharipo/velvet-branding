@@ -2,8 +2,35 @@
 
 :root{
     --color-body: #000000;
+    --color-light: #F6F6F6;
+    --color-red: #DD2B1C;
 }
 body{
     background-color: var(--color-body);
     font-family: "Open Sans";
+}
+.bg-light{
+    background-color: var(--color-light);
+}
+.bg-red{
+    background-color: var(--color-red);
+}
+.bg-resume{
+    background-image: url('./images/career/resume-bg.png');
+    background-repeat: no-repeat;
+}
+.px-custom{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.fs-extrabold{
+    font-size: 128px;
+}
+.fs-bold{
+    font-size: 60px;
+}
+.culture-img{
+    width: 90%;
+    top: 50px;
+    left: 5%;
 }
