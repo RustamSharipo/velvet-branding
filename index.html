@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/main.css">
     <title>Document</title>
@@ -11,9 +14,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent pt-4">
+        <nav class="navbar navbar-expand-lg bg-transparent pt-4 position-absolute w-100 z-1">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./assets/images/nav/logo.svg" alt="" class="img-fluid"></a>
+                <a class="navbar-brand" href="/"><img src="./assets/images/nav/logo.svg" alt="" class="img-fluid"></a>
                 <div class="d-flex gap-2">
                     <ul class="list-unstyled mt-3">
                         <li class="nav-item dropdown">
@@ -38,13 +41,95 @@
                 <div class="collapse navbar-collapse mt-lg-0 mt-4" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-xl-4 gap-3">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">О нас</a>
+                            <a class="nav-link text-white" href="./about.html">О нас</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Проекты</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Наши услуги</a>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link text-white" href="#" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Наши услуги</a>
+                            <div class="dropdown-menu bg-dark w-100">
+                                <div class="mega-content px-4">
+                                    <div class="container">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-lg-4 py-4">
+                                                <ul class="list-unstyled">
+                                                    <li class="text-white fw-bold fs-5 mb-4">Разработка</li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            веб-сайтов</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            веб-приложений</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            Telegram-ботов</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка мобильных
+                                                            приложений</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка CRM/ERP
+                                                            систем</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Администрирование
+                                                            серверов (VPS)</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Поддержка
+                                                            существующих сайтов</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка и
+                                                            внедрение AI- решений</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-lg-4 py-4">
+                                                <ul
+                                                    class="list-unstyled border-start border-end border-secondary h-100 px-lg-5">
+                                                    <li class="text-white fw-bold fs-5 mb-4">Продвижение и маркетинг
+                                                    </li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">SMM-продвижение</a>
+                                                    </li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Контекстная реклама
+                                                            Google Ads/Yandex</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">SEO-оптимизация</a>
+                                                    </li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Копирайтинг</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Наполнение контентом
+                                                            и графикой</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-lg-4 py-4">
+                                                <ul class="list-unstyled ps-lg-4">
+                                                    <li class="text-white fw-bold fs-5 mb-4">Графика и веб-дизайн</li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">UI/UX дизайн</a>
+                                                    </li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Дизайн
+                                                            презентаций</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            каталогов</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            логотипов</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Разработка
+                                                            бренд-буков</a></li>
+                                                    <li class="fs-5 mb-2"><a href="#"
+                                                            class="text-white text-decoration-none">Дизайн упаковки</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Клиенты</a>
@@ -77,7 +162,7 @@
             <img src="assets/images/index/header.png" alt="" class="img-fluid w-100">
             <div class="container">
                 <div class="position-absolute top-50 translate-middle-y">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <h1 class="text-white mb-5"><span class="text-red fw-bold">Брендинговое</span> агенство полного
                             цикла. Нейминг, Фирменный стиль, упаковка.</h1>
                     </div>
@@ -178,7 +263,7 @@
                     <h2 class="text-white">Клиенты</h2>
                     <p class="text-white fw-light fs-5">Lorem ipsum dolor sit amet consectetur. Sapien sed tempor</p>
                 </div>
-                <div class="row align-items-center justify-content-between gy-5 mt-5">
+                <div class="row align-items-center justify-content-between gy-5 mt-4 d-lg-flex d-none">
                     <div class="col-lg-3">
                         <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mb-4">
                     </div>
@@ -204,13 +289,63 @@
                         <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mb-4">
                     </div>
                 </div>
+                <div class="d-lg-none d-block mt-5">
+                    <div class="clients">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                        <img src="./assets/images/index/clients.svg" alt="" class="img-fluid mx-4">
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="py-4 bg-grey mt-5">
+        <section class="py-5 bg-grey mt-5">
+            <div class="container">
+                <h2 class="fw-semibold">Наши услуги</h2>
+                <div class="col-lg-3">
+                    <p class="fs-5 fw-light mt-3">Lorem ipsum dolor sit amet consectetur. Sapien sed tempor</p>
+                </div>
+            </div>
+            <div class="col-lg-11">
+                <div class="container-fluid ps-0">
+                    <div class="offer-slider mt-5">
+                        <img src="./assets/images/index/offer.png" alt="Услуга 1" class="img-fluid offer-img-size me-1">
+                        <img src="./assets/images/index/offer-1.png" alt="Услуга 2"
+                            class="img-fluid offer-img-size me-1">
+                        <img src="./assets/images/index/offer-2.png" alt="Услуга 3"
+                            class="img-fluid offer-img-size me-1">
+                        <img src="./assets/images/index/offer.png" alt="Услуга 1" class="img-fluid offer-img-size me-1">
+                        <img src="./assets/images/index/offer-1.png" alt="Услуга 2"
+                            class="img-fluid offer-img-size me-1">
+                        <img src="./assets/images/index/offer-2.png" alt="Услуга 3"
+                            class="img-fluid offer-img-size me-1">
+                    </div>
+                </div>
 
+                <div class="container mt-3">
+                    <div class="row align-items-start justify-content-between">
+                        <div class="col-lg-6">
+                            <h5 class="fw-bold">Фирменный стиль</h5>
+                            <div class="col-lg-6">
+                                <p class="fw-light text-secondary fs-5">Lorem ipsum dolor sit amet consectetur. Sapien
+                                    sed
+                                    tempor</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-end">
+                            <span class="slider-counter fs-custom">01/<span
+                                    class="total-slides fs-custom text-grey-1">02</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="py-5">
+    <footer class="py-5 border-top border-white">
         <div class="container">
             <div class="row align-items-start justify-content-between">
                 <div class="col-lg-3">
@@ -245,6 +380,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
