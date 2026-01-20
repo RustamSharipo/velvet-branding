@@ -4,6 +4,7 @@
     --color-body: #000000;
     --color-light: #F6F6F6;
     --color-red: #DD2B1C;
+    --color-grey: #E3E3E3;
 }
 body{
     background-color: var(--color-body);
@@ -33,4 +34,17 @@ body{
     width: 90%;
     top: 50px;
     left: 5%;
+}
+.fs-custom{
+    font-size: 70px;
+}
+.z-negative{
+    z-index: -11111;
+}
+.footer-logo{
+    width: 135px;
+    height: 58px;
+}
+.bg-grey{
+    background-color: var(--color-grey);
 }
