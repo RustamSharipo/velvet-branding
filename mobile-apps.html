@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent pt-4 position-absolute w-100 z-1 top-0">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./assets/images/nav/logo.svg" alt="" class="img-fluid"></a>
+                <div class="d-flex gap-2">
+                    <ul class="list-unstyled mt-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle d-lg-none d-block" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/images/nav/language.svg" alt="" class="img-fluid"><span
+                                    class="mx-1">RU</span>
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse mt-lg-0 mt-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-xl-4 gap-xl-3 gap-2 items-bg rounded-3 p-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Наши услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Клиенты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">+99890 123 45 67</a>
+                        </li>
+                        <li class="nav-item dropdown d-lg-block d-none">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/images/nav/language.svg" alt="" class="img-fluid"><span
+                                    class="mx-1">RU</span>
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="position-relative">
+            <img src="./assets/images/career/header.png" alt="" class="img-fluid header-h object-fit-cover">
+            <div class="container position-absolute top-50 start-0 end-0 translate-middle-y">
+                <div class="col-lg-6">
+                    <h1 class="fs-extrabold text-uppercase text-white fw-bold text-lg-start text-center mt-5">разработка
+                        мобильных приложений</h1>
+                    <p class="text-white fs-5 text-lg-start text-center my-4">
+                        Создаем быстрые iOS и Android-приложения под ключ — от UX и архитектуры до публикации и
+                        поддержки. Разрабатываем кроссплатформенные решения на Flutter и React Native, позволяя
+                        запускать одно приложение для iOS и Android, сокращая сроки и бюджет без потери
+                        производительности.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-custom bg-white position-relative">
+            <img src="./assets/images/about/guarantee.png" alt=""
+                class="img-fluid w-75 position-absolute guarantee-img-position-1 z-1">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <h2 class="fw-bold fs-bold text-uppercase">направление разработки</h2>
+                        <p>Создаем решения для любой наши</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <h5 class="fw-bold">E-commerce</h5>
+                            <p>Магазины с программами лояльности и отслеживанием заказов</p>
+                        </div>
+                        <div class="mb-5">
+                            <h5 class="fw-bold">Финтех и платежи</h5>
+                            <p>Безопасные транзакции и интеграция банковских сервисов</p>
+                        </div>
+                        <div class="mb-5">
+                            <h5 class="fw-bold">Логистика и доставка</h5>
+                            <p>Мобильные рабочие места для курьеров и трекинг в реальном времени</p>
+                        </div>
+                        <div class="mb-5">
+                            <h5 class="fw-bold">MVP для стартапов</h5>
+                            <p>Быстрый запуск продукта для проверки гипотез и привлечения инвестиций</p>
+                        </div>
+                        <div class="mb-5">
+                            <h5 class="fw-bold">Корпоративные сервисы</h5>
+                            <p>Автоматизация внутренних процессов и интеграция с вашей CRM/ERP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-custom-1 bg-light position-relative">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <h2 class="fw-bold fs-bold text-uppercase">зачем бизнесу мобильные приложения</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Рост доверия к бренду</h5>
+                        <p>
+                            Наличие собственного приложения в App Store и Google Play повышает доверие к компании и
+                            подчеркивает её масштаб, инновационность и ориентацию на клиента
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-between mt-5">
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Прямой канал продаж 24/7</h5>
+                        <p>
+                            Приложение сокращает путь от идеи до покупки: сохранённые данные позволяют оформить заказ в
+                            два клика, повышая конверсию по сравнению с мобильным сайтом
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Маркетинг через push</h5>
+                        <p>
+                            Забудьте о SMS-рассылках: пуш-уведомления позволяют бесплатно и мгновенно сообщать об акциях
+                            и статусах заказов, обеспечивая CTR в 3–4 раза выше, чем у email
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Автоматизация и экономия затрат</h5>
+                        <p>
+                            Приложение автоматизирует рутину — запись на услуги, отслеживание доставки, ответы на
+                            вопросы и приём оплат — снижая нагрузку на продажи и поддержку и сокращая расходы на
+                            персонал
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Цифровая программа лояльности</h5>
+                        <p>
+                            Вместо пластиковых карт — бонусы, кэшбэк и подарки прямо в смартфоне, что усиливает
+                            привязанность к бренду и стимулирует повторные продажи
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Глубокая аналитика клиентов</h5>
+                        <p>
+                            Вы точно знаете, что интересно клиентам: какие товары смотрят, когда заказывают и где уходят
+                            — и принимаете решения на основе данных, а не интуиции
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="fw-extrabold mb-3">Офлайн и скорость</h5>
+                        <p>
+                            Приложение быстрее сайта и даёт доступ к ключевым функциям даже офлайн, поэтому клиент не
+                            уйдёт к конкурентам из-за медленной загрузки
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="fw-bold fs-bold text-white text-uppercase">этапы работы</h2>
+                <div class="col-lg-6">
+                    <p class="fs-5 my-5 text-white">Мы строим процесс прозрачно, чтобы вы могли контролировать прогресс
+                        каждую неделю</p>
+                </div>
+                <div class="row row-cols-lg-3 justify-content-between gy-5">
+                    <div class="col">
+                        <div class="d-flex">
+                            <div class="col-lg-9">
+                                <h4 class="fw-bold text-white">01</h4>
+                                <h5 class="text-white fw-bold mt-3">Аналитика и проектирование</h5>
+                                <p class="text-grey-2 fs-5">Изучаем бизнес-цели, прописываем CJM (путь пользователя) и
+                                    создаем прототипы
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-lg-center">
+                            <div class="col-lg-9">
+                                <h4 class="fw-bold text-white">02</h4>
+                                <h5 class="text-white fw-bold mt-3">UX/UI Дизайн</h5>
+                                <p class="text-grey-2 fs-5">Создаем современный интерфейс, учитывая гайдлайны Apple и
+                                    Google, чтобы приложение было привычным и удобным</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-lg-end">
+                            <div class="col-lg-9">
+                                <h4 class="fw-bold text-white">03</h4>
+                                <h5 class="text-white fw-bold mt-3">Разработка (Sprints)</h5>
+                                <p class="text-grey-2 fs-5">Пишем чистый, масштабируемый код. Каждую неделю проводим
+                                    демо, показывая готовые функции</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex">
+                            <div class="col-lg-9">
+                                <h4 class="fw-bold text-white">04</h4>
+                                <h5 class="text-white fw-bold mt-3">QA-тестирование</h5>
+                                <p class="text-grey-2 fs-5">Проверяем приложение на разных устройствах, тестируем
+                                    нагрузки и безопасность данных
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-lg-center">
+                            <div class="col-lg-9">
+                                <h4 class="fw-bold text-white">05</h4>
+                                <h5 class="text-white fw-bold mt-3">Релиз и публикация</h5>
+                                <p class="text-grey-2 fs-5">Берем на себя все бюрократические сложности публикации в App
+                                    Store и Google Play
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="fs-bold fw-extrabold text-uppercase">технологии</h2>
+                <div class="row mt-5 justify-content-between align-items-center">
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology-1.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology-2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology-3.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology-4.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="./assets/images/mobile-apps/technology-5.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="fw-bold fs-bold text-white text-uppercase">тариф</h2>
+                <div class="col-lg-5">
+                    <p class="text-white fs-5 my-5">Каждая презентация уникальна. Стоимость зависит от количества
+                        слайдов и необходимости</p>
+                </div>
+                <div class="row justify-content-between mb-3">
+                    <div class="col-lg-3">
+                        <h5 class="text-white fw-bold">Пакет</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="text-white fw-bold">Объем</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="text-white fw-bold">Что включено</h5>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="text-white fw-bold">Стоимость</h5>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <div class="row justify-content-between border-top border-white pt-2 mb-4">
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">MVP Start</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5"> от 4 до 6 недель</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="ps-0">
+                                <li class="text-white fs-5 mb-1">Кроссплатформенное приложение (iOS + Android)</li>
+                                <li class="text-white fs-5 mb-1">Проектирование 8–12 ключевых экранов</li>
+                                <li class="text-white fs-5 mb-1">Базовая логика: регистрация, профиль, каталог, простая
+                                    форма заявки.</li>
+                                <li class="text-white fs-5 mb-1">Поддержка до 3 языков.</li>
+                                <li class="text-white fs-5 mb-1">Публикация в App Store и Google Play под ключ.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">от $3 500</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between border-top border-white pt-2 mb-4">
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">Business</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5"> от 8 до 12 недель</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="ps-0">
+                                <li class="text-white fs-5 mb-1">Весь функционал пакета Start</li>
+                                <li class="text-white fs-5 mb-1">Персональный кабинет, заказы, фильтры</li>
+                                <li class="text-white fs-5 mb-1">Интеграция систем онлайн-оплат: </li>
+                                <li class="text-white fs-5 mb-1">Push-уведомления</li>
+                                <li class="text-white fs-5 mb-1">Индивидуальная админ-панель для управления контентом и
+                                    заказами.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">от $8 000</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between border-top border-white pt-2 mb-4">
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">Enterprise</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">индивидуально</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="ps-0">
+                                <li class="text-white fs-5 mb-1">Весь функционал пакета Business.</li>
+                                <li class="text-white fs-5 mb-1">Сложные интеграции: Синхронизация с 1С, SAP, Bitrix24
+                                    или вашими внутренними ERP/CRM.</li>
+                                <li class="text-white fs-5 mb-1">Высокоуровневое шифрование данных и защита транзакций.
+                                </li>
+                                <li class="text-white fs-5 mb-1">Архитектура, готовая к нагрузке в 100 000+
+                                    пользователей в час.</li>
+                                <li class="text-white fs-5 mb-1">Приоритетное обслуживание по договору SLA.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="text-white fs-5">от $15 000</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="text-decoration-none text-white fs-5 px-5 py-2 bg-red">Заказать приложение</a>
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fs-bold fw-bold text-uppercase text-lg-start text-center">вопросы и ответы</h2>
+                <div class="d-flex mt-5 justify-content-center">
+                    <div class="col-lg-8 col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Сколько стоит разработка приложения?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Стоимость создания MVP (минимально жизнеспособной версии) начинается от 30 000
+                                        000 сум. Финальная смета формируется после аудита ваших задач и зависит от
+                                        количества интеграций (платежные системы, CRM, складской учет) и сложности
+                                        функционала
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Почему так дорого?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Почему так дорого?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                         Какие сроки запуска?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                         Какие сроки запуска?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        Что входит в поддержку после релиза?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Что входит в поддержку после релиза?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                         Можно ли интегрировать приложение с нашими текущими системами?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                         Можно ли интегрировать приложение с нашими текущими системами?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        Можно ли начать с малого и масштабировать проект позже?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Можно ли начать с малого и масштабировать проект позже?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
+                                        Чем мобильное приложение отличается от мобильной версии сайта?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Чем мобильное приложение отличается от мобильной версии сайта?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                        aria-expanded="false" aria-controls="collapseEight">
+                                        Какие дополнительные расходы меня ждут после запуска приложения?
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Какие дополнительные расходы меня ждут после запуска приложения?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                        aria-expanded="false" aria-controls="collapseNine">
+                                        Что если мне не понравится итоговый результат?
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Что если мне не понравится итоговый результат?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-4 rounded-2 border-red ">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-red rounded-2 text-white fw-semibold"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                        aria-expanded="false" aria-controls="collapseTen">
+                                        Что входит в гарантийное обслуживание?
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body rounded-bottom-3">
+                                        Что входит в гарантийное обслуживание?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-custom-1 bg-ready">
+            <div class="container">
+                <h2 class="text-center fs-bold fw-bold text-white text-uppercase text-center">готовы запустить мобильное приложение?</h2>
+                <p class="text-white my-5 text-center fs-5">Оставьте контакты — подготовим концепт, сроки и смету под ваши задачи</p>
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <input type="text"
+                            class="border-0 border-bottom border-white text-grey-2 bg-transparent pb-3 fs-5 w-100 mb-5"
+                            placeholder="Ваше Имя">
+                        <input type="text"
+                            class="border-0 border-bottom border-white text-grey-2 bg-transparent pb-3 fs-5 w-100 mb-5"
+                            placeholder="Номер телеофна">
+                        <input type="text"
+                            class="border-0 border-bottom border-white text-grey-2 bg-transparent pb-3 fs-5 w-100 mb-5"
+                            placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="text-decoration-none bg-red text-white px-5 py-2">Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-start justify-content-between gap-lg-0 gap-4">
+                <div class="col-lg-3">
+                    <img src="./assets/images/nav/logo.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                        <li class="text-white fs-5 mb-4">Ссылки</li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Главная</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">О компании</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Карьера</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Вопросы и ответы</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Услуги</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                        <li class="text-white fs-5 mb-4">Услуги</li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Дизайн аутсорсинг</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Разработка каталогов</a>
+                        </li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white">Разработка презентаций</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled">
+                        <li class="text-white fs-5 mb-4">Контакты</li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white"><img
+                                    src="./assets/images/footer/location.svg" alt="" class="img-fluid me-2">г.Ташкент,
+                                улица Фидокор 32</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white"><img
+                                    src="./assets/images/footer/phone.svg" alt="" class="img-fluid me-2">+99890 123 45
+                                67</a></li>
+                        <li class="mb-3"><a href="#" class="text-decoration-none text-white"><img
+                                    src="./assets/images/footer/mail.svg" alt=""
+                                    class="img-fluid me-2">velvet.branding@mail.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

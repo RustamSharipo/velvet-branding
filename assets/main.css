@@ -177,7 +177,9 @@ body {
 .product-text-width {
     width: 90%;
 }
-
+.facts-block-w{
+    width: 90%;
+}
 .header-text-position {
     top: 50%;
 }
@@ -200,6 +202,10 @@ body {
 .guarantee-img-position{
     bottom: -10%;
     right: 0;
+}
+.guarantee-img-position-1{
+    bottom: -10%;
+    left: 0;
 }
 .why-img-photo {
     top: 9%;
