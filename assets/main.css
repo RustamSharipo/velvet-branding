@@ -21,9 +21,11 @@ body {
 .bg-light {
     background-color: var(--color-light);
 }
-.bg-dark-grey{
+
+.bg-dark-grey {
     background-color: var(--color-dark-grey);
 }
+
 .bg-red {
     background-color: var(--color-red);
 }
@@ -32,6 +34,7 @@ body {
     background-image: url('./images/career/resume-bg.png');
     background-repeat: no-repeat;
 }
+
 .bg-ready {
     background-image: url('./images/design/ready-bg.png');
     background-repeat: no-repeat;
@@ -56,18 +59,23 @@ body {
 .text-grey-1 {
     color: var(--color-grey-1);
 }
+
 .text-grey-2 {
     color: var(--color-grey-2);
 }
-.text-grey-3{
+
+.text-grey-3 {
     color: var(--color-grey-3);
 }
-.text-grey-4{
+
+.text-grey-4 {
     color: var(--color-grey-4);
 }
-.fw-extrabold{
+
+.fw-extrabold {
     font-weight: 900;
 }
+
 .border-red {
     border: 1px solid var(--color-red);
 }
@@ -80,14 +88,17 @@ body {
 .mt-custom {
     margin-top: 200px;
 }
-.py-custom{
+
+.py-custom {
     padding-top: 60px;
     padding-bottom: 300px;
 }
-.py-custom-1{
+
+.py-custom-1 {
     padding-top: 200px;
     padding-bottom: 60px;
 }
+
 .fs-extrabold {
     font-size: 100px;
 }
@@ -173,6 +184,7 @@ body {
     top: 50%;
     color: white;
 }
+
 .offer-slider .slick-prev:hover,
 .offer-slider .slick-next:hover,
 .offer-slider .slick-prev:focus,
@@ -185,9 +197,11 @@ body {
 .product-text-width {
     width: 90%;
 }
-.facts-block-w{
+
+.facts-block-w {
     width: 90%;
 }
+
 .header-text-position {
     top: 50%;
 }
@@ -207,14 +221,17 @@ body {
     top: 9%;
     left: 5%;
 }
-.guarantee-img-position{
+
+.guarantee-img-position {
     bottom: -25%;
     right: 0;
 }
-.guarantee-img-position-1{
+
+.guarantee-img-position-1 {
     bottom: -10%;
     left: 0;
 }
+
 .why-img-photo {
     top: 9%;
     right: 5%;
@@ -244,6 +261,7 @@ body {
 .header-dots .slick-active .header-dot {
     background-color: red;
 }
+
 .client-dots {
     display: flex !important;
     justify-content: space-between;
@@ -268,12 +286,38 @@ body {
 .client-dots .slick-active .header-dot {
     background-color: red;
 }
-.line{
+
+.line {
     height: 350px;
     width: 1px;
     background-color: #000000;
 }
 
+.cross-grid {
+    position: relative;
+}
+
+.cross-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 49%;
+    width: 1px;
+    background-color: #e5e5e5;
+    transform: translateX(-50%);
+}
+
+.cross-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background-color: #e5e5e5;
+    transform: translateY(-50%);
+}
 
 @media(max-width: 1200px) {
     .header-h {
@@ -302,6 +346,11 @@ body {
 
     .fs-extrabold {
         font-size: 60px;
+    }
+
+    .cross-grid::before,
+    .cross-grid::after {
+        display: none;
     }
 }
 
