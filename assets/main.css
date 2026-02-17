@@ -322,6 +322,10 @@ body {
     background-color: #e5e5e5;
     transform: translateY(-50%);
 }
+.border-sides{
+    border-right: 1px solid #676767;
+    border-left: 1px solid #676767;
+}
 @media(max-width: 1300px){
     .header-h{
         height: 800px;
@@ -333,6 +337,12 @@ body {
     }
     .fs-extrabold{
         font-size: 70px;
+    }
+    .border-sides{
+        border-top: 1px solid #676767;
+        border-bottom: 1px solid #676767;
+        border-left: 0;
+        border-right: 0;
     }
 }
 
