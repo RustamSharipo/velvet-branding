@@ -20,7 +20,8 @@ $(document).ready(function () {
         settings: {
           dots: true,
           arrows: false,
-          variableWidth: true,
+          prevArrow: false,
+          nextArrow: false,
           slidesToScroll: 1,
         },
       },
@@ -32,8 +33,20 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<button class="slick-prev-1">&larr;</button>',
-    nextArrow: '<button class="slick-next-1">&rarr;</button>',
+    appendDots: $(".product-dots .container"),
+    customPaging: function (slider, i) {
+      return '<span class="product-dot"></span>';
+    },
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          appendDots: false,
+        },
+      },
+    ],
+    prevArrow: '<button class="slick-prev-1"><</button>',
+    nextArrow: '<button class="slick-next-1">></button>',
   });
   $slider2.slick({
     dots: true,
@@ -41,8 +54,8 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: '<button class="slick-prev-2">&larr;</button>',
-    nextArrow: '<button class="slick-next-2">&rarr;</button>',
+    prevArrow: '<button class="slick-prev-2"><</button>',
+    nextArrow: '<button class="slick-next-2">></button>',
     responsive: [
       {
         breakpoint: 1400,
@@ -65,6 +78,10 @@ $(document).ready(function () {
           slidesToScroll: 2,
           arrows: false,
           dots: true,
+          appendDots: $(".other-dots .container"),
+          customPaging: function (slider, i) {
+            return '<span class="other-dot"></span>';
+          },
         },
       },
       {
@@ -105,7 +122,7 @@ $(document).ready(function () {
     cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 3000,
-    appendDots: $(".header-dots"),
+    appendDots: $(".header-dots .container"),
     customPaging: function (slider, i) {
       return '<span class="header-dot"></span>';
     },
@@ -117,6 +134,17 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          appendDots: $(".product-dots .container"),
+          customPaging: function (slider, i) {
+            return '<span class="product-dot"></span>';
+          },
+        },
+      },
+    ],
     prevArrow: '<button class="slick-prev-1">&larr;</button>',
     nextArrow: '<button class="slick-next-1">&rarr;</button>',
   });
