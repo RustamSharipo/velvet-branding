@@ -434,7 +434,6 @@ body {
     display: flex !important;
     justify-content: center;
     padding: 0;
-    margin: 20px;
     width: 100%;
 }
 
@@ -459,9 +458,33 @@ body {
     background-color: #FFF;
     border-color: #FFF;
 }
+.offer-dots {
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
 
-.client-dots li button {
-    display: none;
+.offer-dots li {
+    display: inline-block;
+    width: auto;
+    list-style: none;
+}
+
+.offer-dot {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.offer-dots .slick-active .offer-dot {
+    background-color: #000;
+    border-color: #000;
 }
 
 .line {
@@ -501,12 +524,10 @@ body {
     border-left: 1px solid #676767;
 }
 
-/* Убираем стандартную стрелку Bootstrap */
 .accordion-button::after {
     display: none;
 }
 
-/* Добавляем плюс, когда кнопка свернута (collapsed) */
 .accordion-button.collapsed::before {
     content: "+";
     font-size: 1.5rem;
@@ -617,6 +638,12 @@ body {
 
     .mt-custom {
         margin-top: 100px;
+    }
+    .slick-prev{
+        display: none !important;
+    }
+    .slick-next{
+        display: none !important;
     }
 }
 

@@ -5,6 +5,7 @@ $(document).ready(function () {
   var $slider3 = $(".clients");
   var $slider4 = $(".header-slider");
   var $slider5 = $(".product-phone-version");
+  var $slider6 = $(".offer-slider-phone-version")
 
   $slider.slick({
     dots: false,
@@ -14,15 +15,30 @@ $(document).ready(function () {
     slidesToScroll: 3,
     prevArrow: '<button class="slick-prev">&larr;</button>',
     nextArrow: '<button class="slick-next">&rarr;</button>',
+    appendDots: $(".offer-dots"),
+    customPaging: function (slider, i) {
+      return '<span class="offer-dot"></span>';
+    },
     responsive: [
       {
         breakpoint: 992,
         settings: {
           dots: true,
           arrows: false,
-          prevArrow: false,
-          nextArrow: false,
           slidesToScroll: 1,
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '15%',
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          dots: true,
+          centerPadding: '0%',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],
@@ -148,6 +164,34 @@ $(document).ready(function () {
     prevArrow: '<button class="slick-prev-1">&larr;</button>',
     nextArrow: '<button class="slick-next-1">&rarr;</button>',
   });
+  $slider6.slick({
+    dots: true,
+    appendDots: $(".offer-dots"),
+    customPaging: function (slider, i) {
+      return '<span class="offer-dot"></span>';
+    },
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '15%',
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          centerPadding: '0%',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  });
   function calculateTotalPages() {
     var slidesToShow = slick.options.slidesToShow;
     var totalSlides = slick.slideCount;
@@ -168,8 +212,8 @@ $(document).ready(function () {
 
     $(".slider-counter").html(
       (currentPage < 10 ? "0" + currentPage : currentPage) +
-        "/" +
-        (totalPages < 10 ? "0" + totalPages : totalPages),
+      "/" +
+      (totalPages < 10 ? "0" + totalPages : totalPages),
     );
 
     // Обновляем также .total-slides (на случай адаптивности)
@@ -186,8 +230,8 @@ $(document).ready(function () {
 
       $(".slider-counter").html(
         (currentPage < 10 ? "0" + currentPage : currentPage) +
-          "/" +
-          (totalPages < 10 ? "0" + totalPages : totalPages),
+        "/" +
+        (totalPages < 10 ? "0" + totalPages : totalPages),
       );
       $(".total-slides").text(totalPages < 10 ? "0" + totalPages : totalPages);
     }, 100);
