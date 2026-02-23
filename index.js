@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  var $slider = $(".offer-slider");
-  var $slider1 = $(".product");
-  var $slider2 = $(".other-products");
-  var $slider3 = $(".clients");
-  var $slider4 = $(".header-slider");
-  var $slider5 = $(".product-phone-version");
-  var $slider6 = $(".offer-slider-phone-version")
+  let $slider = $(".offer-slider");
+  let $slider1 = $(".product");
+  let $slider2 = $(".other-products");
+  let $slider3 = $(".clients");
+  let $slider4 = $(".header-slider");
+  let $slider5 = $(".product-phone-version");
+  let $slider6 = $(".offer-slider-phone-version")
 
   $slider.slick({
     dots: false,
